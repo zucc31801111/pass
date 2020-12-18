@@ -1,0 +1,96 @@
+/* pages/game/game.wxss */
+.bg-image
+{ 
+  width : 100%;
+  height : 100%;  
+  position: fixed;  
+  z-index: -1;  
+}
+.play-background{
+  width : 680rpx;
+  height : 500rpx; 
+  margin-top: 100rpx;
+  margin-left: 40rpx;
+  position: absolute; 
+  background: white;
+  border-radius: 20rpx;
+  z-index: -1;  
+  opacity:0.8;
+}
+.text1{
+  width : 600rpx;
+  height : 300rpx; 
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  line-height: 80rpx;
+  font-size: 80rpx;
+  color: black;
+  position: absolute; 
+  font-weight: bold;
+  text-align: center;
+}
+.text2{
+  width : 680rpx;
+  height : 300rpx; 
+  margin-top: 160rpx;
+  margin-left: 10rpx;
+  line-height: 50rpx;
+  font-size: 50rpx;
+  color: black;
+  position: absolute; 
+}
+.text3{
+  width : 600rpx;
+  height : 300rpx; 
+  margin-top: 320rpx;
+  margin-left: 10rpx;
+  line-height: 50rpx;
+  font-size: 50rpx;
+  color: black;
+  position: absolute; 
+  text-align: center;
+  font-weight: bold;
+}
+
+.bt-start1{
+  width : 400rpx;
+  height : 100rpx; 
+  margin-top: 800rpx;
+  margin-left: 160rpx;
+  position: absolute; 
+}
+.bt-starttext1{
+  width : 400rpx;
+  height : 100rpx; 
+  margin-top: 800rpx;
+  margin-left: 160rpx;
+  line-height: 100rpx;
+  font-size: 50rpx;
+  color: white;
+  position: absolute; 
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;   /*按钮透明*/  
+  border:none;				/*设置按钮边框*/
+}
+.bt-start2{
+  width : 400rpx;
+  height : 100rpx; 
+  margin-top: 1000rpx;
+  margin-left: 160rpx;
+  position: absolute; 
+}
+.bt-starttext2{
+  width : 400rpx;
+  height : 100rpx; 
+  margin-top: 1000rpx;
+  margin-left: 160rpx;
+  line-height: 100rpx;
+  font-size: 50rpx;
+  color: white;
+  position: absolute; 
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;   /*按钮透明*/  
+  border:none;				/*设置按钮边框*/
+}

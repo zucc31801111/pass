@@ -1,0 +1,11 @@
+<!--pages/game/game.wxml-->
+<image class="bg-image" mode="scaleToFill" src="https://s3.ax1x.com/2020/12/18/rYfprD.jpg"></image>
+<view class="play-background">
+  <text class="text1">恭喜完成挑战！</text>
+  <text class="text2">S同时性加工（Simultaneous Procession）</text>
+  <text class="text3">等级：{{task}}</text>
+</view>
+<image class="bt-start1" src="/images/bt.png"></image>
+<button class="bt-starttext1" bindtap="goGame2">重新挑战</button>
+<image class="bt-start2" src="/images/bt.png"></image>
+<button class="bt-starttext2" bindtap="goGame2">查看个人能力</button>

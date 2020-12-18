@@ -1,0 +1,59 @@
+/* pages/game/game.wxss */
+.bg-image
+{ 
+  width : 100%;
+  height : 100%;  
+  position: fixed;  
+  z-index: -1;  
+}
+.title
+{
+  color: black;
+  position: absolute;
+  width : 100%;
+  height: 200rpx;
+  font-size: 75rpx;
+  margin-top: 10rpx;
+  text-align: center;
+ 
+}
+.little-title
+{
+  color: black;
+  position: absolute;
+  height: 100rpx;
+  width : 100%;
+  margin-top: 120rpx;
+  margin-left: 70rpx;
+  font-size: 32rpx;
+}
+.play-image{
+  width : 560rpx;
+  height : 1000rpx; 
+  margin-top: 180rpx;
+  margin-left: 100rpx;
+  position: absolute; 
+}
+.bt-start{
+  width : 400rpx;
+  height : 100rpx; 
+  margin-top: 1200rpx;
+  margin-left: 160rpx;
+  position: absolute; 
+}
+.bt-starttext{
+  width : 400rpx;
+  height : 100rpx; 
+  margin-top: 1200rpx;
+  margin-left: 170rpx;
+  line-height: 100rpx;
+  font-size: 50rpx;
+  color: white;
+  position: absolute; 
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;   /*按钮透明*/  
+  border:none;				/*设置按钮边框*/
+}
+
+ 

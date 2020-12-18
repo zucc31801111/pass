@@ -1,0 +1,77 @@
+<!--pages/game/game.wxml-->
+<image class="bg-image" mode="scaleToFill" src="/images/game1.png"></image>
+<view class="time1" style='color:white'>
+  <image class="time1-image" src="/images/bt.png"></image>
+  <text >时间：{{countDownNum}}S</text>
+  </view>
+
+<view wx:if="{{pageCount==1||pageCount==3||pageCount==5}}">
+  <view class="play-background1"></view>
+  <view class="title1">你有8秒钟的时间记住下列图形 </view>
+  <image class="play-content" src="https://s3.ax1x.com/2020/12/18/rJDtZ6.png"></image>
+  <image class="bt-start1" src="/images/bt.png"></image>
+  <button class="bt-starttext1" bindtap="goGame">好的，记住了</button>
+</view>
+
+<view wx:if="{{pageCount==2||pageCount==4||pageCount==6}}">
+  <view class="play-background2"></view>
+  <view class="title2">请选择并点击下列方框中含有给定的图形 </view>
+  <!-- <image class="play-image1" src="/images/game1.png"></image>
+  <image class="play-image2" src="/images/game1.png"></image>
+  <image class="play-image3" src="/images/game1.png"></image>
+  <image class="play-image4" src="/images/game1.png"></image>
+  <image class="play-image5" src="/images/game1.png"></image> -->
+  <!-- <image class="play-image6" src="/images/game1.png"></image> -->
+  <view wx:if="{{stys[0].sty==0}}">
+ <button class="score1" style="background-image:url({{pc[0].url}}); opacity:0.5;" bindtap='setClick'>
+ </button>
+</view>
+<view wx:if="{{stys[0].sty==1}}">
+ <button class="score1" style="background-image:url({{pc[0].url}}); opacity:1;" bindtap='setClick'>
+ </button>
+</view>
+<view wx:if="{{stys[1].sty==0}}">
+ <button class="score2" style="background-image:url({{pc[1].url}}); opacity:0.5;" catchtap='setClick2'>
+ </button>
+</view>
+<view wx:if="{{stys[1].sty==1}}">
+ <button class="score2" style="background-image:url({{pc[1].url}}); opacity:1;" catchtap='setClick2'>
+ </button>
+</view>
+<view wx:if="{{stys[2].sty==0}}">
+ <button class="score3" style="background-image:url({{pc[2].url}}); opacity:0.5;" catchtap='setClick3'>
+ </button>
+</view>
+<view wx:if="{{stys[2].sty==1}}">
+ <button class="score3" style="background-image:url({{pc[2].url}}); opacity:1;" catchtap='setClick3'>
+ </button>
+</view>
+ <view wx:if="{{stys[3].sty==0}}">
+ <button class="score4" style="background-image:url({{pc[3].url}}); opacity:0.5;" catchtap='setClick4'>
+ </button>
+</view>
+<view wx:if="{{stys[3].sty==1}}">
+ <button class="score4" style="background-image:url({{pc[3].url}}); opacity:1;" catchtap='setClick4'>
+ </button>
+</view>
+ <view wx:if="{{stys[4].sty==0}}">
+ <button class="score5" style="background-image:url({{pc[4].url}}); opacity:0.5;" catchtap='setClick5'>
+ </button>
+</view>
+<view wx:if="{{stys[4].sty==1}}">
+ <button class="score5" style="background-image:url({{pc[4].url}}); opacity:1;" catchtap='setClick5'>
+ </button>
+</view>
+ <view wx:if="{{stys[5].sty==0}}">
+ <button class="score6" style="background-image:url({{pc[5].url}}); opacity:0.5;" catchtap='setClick6'>
+ </button>
+</view>
+<view wx:if="{{stys[5].sty==1}}">
+ <button class="score6" style="background-image:url({{pc[5].url}}); opacity:1;" catchtap='setClick6'>
+ </button>
+</view>
+
+  <image class="bt-start2" src="/images/bt.png"></image>
+  <button class="bt-starttext2" bindtap="goGame2Index">下一关</button>
+</view>
+

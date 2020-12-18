@@ -1,0 +1,110 @@
+<!--pages/game/game.wxml-->
+<image class="bg-image" mode="scaleToFill" src="/images/game2.png"></image>
+ <view class="time1" style='color:white'>
+  <image class="time1-image" src="/images/bt.png"></image>
+  <text >时间：{{countDownNum}}S</text>
+  </view>
+  <view class="play-background"></view>
+  <view class="line"></view>
+<view>
+  <view class="title">图中问号应该选择哪个图形？ </view>
+  <image class="image1" src="{{pc[0].url}}"></image>
+  <image class="image2" src="{{pc[1].url}}"></image>
+  <image class="image3" src="{{pc[2].url}}"></image>
+  <image class="image4" src="{{pc[3].url}}"></image>
+  <image class="image5" src="{{pc[4].url}}"></image>
+  <image class="image6" src="{{pc[5].url}}"></image>
+  <image class="image7" src="{{pc[6].url}}"></image>
+  <image class="image8" src="{{pc[7].url}}"></image>
+  <image class="image9" src="{{pc[8].url}}"></image>
+
+  <view wx:if="{{stys[0].sty==0}}">
+ <button class="score" style="background-image:url({{pc2[0].url}}); opacity:0.5;" bindtap='setClick'>
+ </button>
+</view>
+<view wx:if="{{stys[0].sty==1}}">
+ <button class="score" style="background-image:url({{pc2[0].url}}); opacity:1;" bindtap='setClick'>
+ </button>
+</view>
+<view wx:if="{{stys[1].sty==0}}">
+ <button class="score2" style="background-image:url({{pc2[1].url}}); opacity:0.5;" bindtap='setClick2'>
+ </button>
+</view>
+<view wx:if="{{stys[1].sty==1}}">
+ <button class="score2" style="background-image:url({{pc2[1].url}}); opacity:1;" bindtap='setClick2'>
+ </button>
+</view>
+<view wx:if="{{stys[2].sty==0}}">
+ <button class="score3" style="background-image:url({{pc2[2].url}}); opacity:0.5;" bindtap='setClick3'>
+ </button>
+</view>
+<view wx:if="{{stys[2].sty==1}}">
+ <button class="score3" style="background-image:url({{pc2[2].url}}); opacity:1;" bindtap='setClick3'>
+ </button>
+</view>
+<view wx:if="{{stys[3].sty==0}}">
+ <button class="score4" style="background-image:url({{pc2[3].url}}); opacity:0.5;" bindtap='setClick4'>
+ </button>
+</view>
+<view wx:if="{{stys[3].sty==1}}">
+ <button class="score4" style="background-image:url({{pc2[3].url}}); opacity:1;" bindtap='setClick4'>
+ </button>
+</view>
+<view wx:if="{{stys[4].sty==0}}">
+ <button class="score5" style="background-image:url({{pc2[4].url}}); opacity:0.5;" bindtap='setClick5'>
+ </button>
+</view>
+<view wx:if="{{stys[4].sty==1}}">
+ <button class="score5" style="background-image:url({{pc2[4].url}}); opacity:1;" bindtap='setClick5'>
+ </button>
+</view>
+<view wx:if="{{stys[5].sty==0}}">
+ <button class="score6" style="background-image:url({{pc2[5].url}}); opacity:0.5;" bindtap='setClick6'>
+ </button>
+</view>
+<view wx:if="{{stys[5].sty==1}}">
+ <button class="score6" style="background-image:url({{pc2[5].url}}); opacity:1;" bindtap='setClick6'>
+ </button>
+</view>
+<view wx:if="{{stys[6].sty==0}}">
+ <button class="score7" style="background-image:url({{pc2[6].url}}); opacity:0.5;" bindtap='setClick7'>
+ </button>
+</view>
+<view wx:if="{{stys[6].sty==1}}">
+ <button class="score7" style="background-image:url({{pc2[6].url}}); opacity:1;" bindtap='setClick7'>
+ </button>
+</view>
+<view wx:if="{{stys[7].sty==0}}">
+ <button class="score8" style="background-image:url({{pc2[7].url}}); opacity:0.5;" bindtap='setClick8'>
+ </button>
+</view>
+<view wx:if="{{stys[7].sty==1}}">
+ <button class="score8" style="background-image:url({{pc2[7].url}}); opacity:1;" bindtap='setClick8'>
+ </button>
+</view>
+<view wx:if="{{stys[8].sty==0}}">
+ <button class="score9" style="background-image:url({{pc2[8].url}}); opacity:0.5;" bindtap='setClick9'>
+ </button>
+</view>
+<view wx:if="{{stys[8].sty==1}}">
+ <button class="score9" style="background-image:url({{pc2[8].url}}); opacity:1;" bindtap='setClick9'>
+ </button>
+</view>
+<view wx:if="{{stys[9].sty==0}}">
+ <button class="score10" style="background-image:url({{pc2[9].url}}); opacity:0.5;" bindtap='setClick10'>
+ </button>
+</view>
+<view wx:if="{{stys[9].sty==1}}">
+ <button class="score10" style="background-image:url({{pc2[9].url}}); opacity:1;" bindtap='setClick10'>
+ </button>
+</view>
+
+
+
+
+
+
+  <image class="bt-start" src="/images/bt.png"></image>
+  <button class="bt-starttext" bindtap="goGame2">下一关</button>
+</view>
+
