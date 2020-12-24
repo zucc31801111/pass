@@ -99,12 +99,6 @@
  </button>
 </view>
 
-
-
-
-
-
   <image class="bt-start" src="/images/bt.png"></image>
   <button class="bt-starttext" bindtap="goGame2">下一关</button>
 </view>
-

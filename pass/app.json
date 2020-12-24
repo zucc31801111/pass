@@ -1,6 +1,11 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/logs/logs",
+    "pages/indexgame1/index",
+    "pages/gamefirst/game",
+    "pages/indexgame2/index",
+    "pages/game2/game",
     "pages/game/game"
   ],
   "window": {

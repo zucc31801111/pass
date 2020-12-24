@@ -11,13 +11,13 @@ Page({
   },
   goGame1Index: function() {
     wx.navigateTo({
-      url: '../indexgame1/index'
+      url: "../indexgame1/index"
     })
   },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../logs/logs'
+      url: "../logs/logs"
     })
   },
   onLoad: function () {

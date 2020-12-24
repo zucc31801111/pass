@@ -8,7 +8,7 @@
 <view wx:if="{{pageCount==1||pageCount==3||pageCount==5}}">
   <view class="play-background1"></view>
   <view class="title1">你有8秒钟的时间记住下列图形 </view>
-  <image class="play-content" src="https://s3.ax1x.com/2020/12/18/rJDtZ6.png"></image>
+  <image class="play-content" src="{{aswurl}}"></image>
   <image class="bt-start1" src="/images/bt.png"></image>
   <button class="bt-starttext1" bindtap="goGame">好的，记住了</button>
 </view>

@@ -35,6 +35,7 @@ App({
   },
   globalData: {
     userInfo: null,
+    age:1,
     pGame1:0,
     pGame2:0,
     pGame1Count:1,

@@ -1,13 +1,164 @@
 // pages/game/game.js
 Page({
   data: {
-    pc: [{ id: 1, 'url': 'https://s3.ax1x.com/2020/12/18/rJBVAO.png','sty':1, }, { id: 2, 'url': 'https://s3.ax1x.com/2020/12/18/rJDUIO.png','sty':1, },
-    { id: 3, 'url': 'https://s3.ax1x.com/2020/12/18/rJ0X7T.png','sty':0 }, { id: 4, 'url': 'https://s3.ax1x.com/2020/12/18/rJBp9J.png','sty':0, },
-    { id: 5, 'url': 'https://s3.ax1x.com/2020/12/18/rJBFnx.png','sty':0 }, { id: 6, 'url': 'https://s3.ax1x.com/2020/12/18/rJVP9s.png','sty':0, }],
-   stys:[{'sty':1},{'sty':1},{'sty':1},{'sty':1},{'sty':1},{'sty':1}],
+    aswurl:"",
+    pc: [],
+    stys:[{'sty':1},{'sty':1},{'sty':1},{'sty':1},{'sty':1},{'sty':1}],
     timer: '',//定时器名字
-    countDownNum: '10',//倒计时初始值
-    pageCount:1,  
+    countDownNum: '8',//倒计时初始值
+    pageCount:1,
+  },
+
+  goGame: function() {
+    let that = this; 
+    clearInterval(that.data.timer);
+    that.setData({
+      timer:null
+    })  
+    var app = getApp();
+    var count=app.globalData.pGame1Count;
+    var ages= app.globalData.age;
+        app.globalData.pGame1Count++; 
+    if(ages==1){ 
+      if(count==1){
+        that.setData({
+          pageCount: app.globalData.pGame1Count,
+          countDownNum: '30',
+         });
+      }
+      else if(count==3||count==5){
+        that.setData({
+          pageCount: app.globalData.pGame1Count,
+          countDownNum: '25',
+         });
+      }
+        }
+        else{
+          if(count==1){
+            that.setData({
+              pageCount: app.globalData.pGame1Count,
+              countDownNum: '25',
+             });
+          }
+          else if(count==3||count==5){
+            that.setData({
+              pageCount: app.globalData.pGame1Count,
+              countDownNum: '20',
+             });
+          }
+        }
+         this.countDown();     
+  },
+  goGame2Index: function() {  
+    let that = this;
+    clearInterval(that.data.timer);
+    that.setData({
+      timer:null
+    })  
+    var count=0;
+    var answercount=0;
+    for (let i = 0; i <that.data.stys.length; i++) {
+        if (that.data.stys[i].sty == 0) {
+          count++
+          if(that.data.pc[i].sty==1){   
+            answercount++;
+          }
+        }
+      }
+    var app = getApp();
+    var ages=app.globalData.age;
+    var pa= app.globalData.pGame1Count;
+    if(ages==1){
+      if(count==1&&answercount==count&&pa==2)
+      app.globalData.pGame1++;
+      if(count==2&&answercount==count&&(pa==4||pa==6))
+      app.globalData.pGame1++;
+    }
+   else {
+    if(count==2&&answercount==count&&(pa==2||pa==4))
+    app.globalData.pGame1++;
+    if(count==3&&answercount==count&&pa==6)
+    app.globalData.pGame1++;
+   }
+    console.log(app.globalData.pGame1)
+       if(pa<=5){
+        app.globalData.pGame1Count++;
+        var Arr = [{ id: 4, 'url': 'https://s3.ax1x.com/2020/12/18/rJBp9J.png','sty':0, },
+        { id: 5, 'url': 'https://s3.ax1x.com/2020/12/18/rJBFnx.png','sty':0 },
+        { id: 1, 'url': 'https://s3.ax1x.com/2020/12/18/rJBVAO.png','sty':1, },
+        { id: 6, 'url': 'https://s3.ax1x.com/2020/12/18/rJVP9s.png','sty':0 }, 
+        { id: 2, 'url': 'https://s3.ax1x.com/2020/12/18/rJDUIO.png','sty':1, },
+        { id: 3, 'url': 'https://s3.ax1x.com/2020/12/18/rJ0X7T.png','sty':0 }];
+        function randArr(arr) {
+          for (var i = 0; i < arr.length; i++) {
+              var iRand = parseInt(arr.length * Math.random());
+              var temp = arr[i];
+              arr[i] = arr[iRand];
+              arr[iRand] = temp;
+          }
+          return arr;
+      }
+      randArr(Arr);
+        that.setData({
+          pc: Arr,
+          pageCount: app.globalData.pGame1Count,
+          countDownNum: '8',
+          stys:[{'sty':1},{'sty':1},{'sty':1},{'sty':1},{'sty':1},{'sty':1}],
+         });
+         this.countDown();
+       }
+       else{
+        wx.redirectTo({
+          url: '../indexgame2/index'
+        })
+  }
+  },
+  onLoad: function (options) {
+    var app = getApp();
+    app.globalData.pGame1=0;
+    app.globalData.pGame1Count=1;
+    var ages= app.globalData.age;
+    if(ages==1){
+      var Arr = [{ id: 1, 'url': 'https://s3.ax1x.com/2020/12/18/rJBVAO.png','sty':1, },
+      { id: 2, 'url': 'https://s3.ax1x.com/2020/12/18/rJVP9s.png','sty':0, },
+     { id: 3, 'url': 'https://s3.ax1x.com/2020/12/18/rJ0X7T.png','sty':0 }, 
+     { id: 4, 'url': 'https://s3.ax1x.com/2020/12/18/rJBp9J.png','sty':0, },];
+     var arrurl="https://s3.ax1x.com/2020/12/18/rJDtZ6.png";
+    }
+   else{
+    var Arr = [{ id: 1, 'url': 'https://s3.ax1x.com/2020/12/18/rJBVAO.png','sty':1, }, 
+    { id: 2, 'url': 'https://s3.ax1x.com/2020/12/18/rJDUIO.png','sty':1, },
+    { id: 3, 'url': 'https://s3.ax1x.com/2020/12/18/rJ0X7T.png','sty':0 }, 
+    { id: 4, 'url': 'https://s3.ax1x.com/2020/12/18/rJBp9J.png','sty':0, },
+    { id: 5, 'url': 'https://s3.ax1x.com/2020/12/18/rJBFnx.png','sty':0 }, 
+    { id: 6, 'url': 'https://s3.ax1x.com/2020/12/18/rJVP9s.png','sty':0, }];
+    var arrurl="https://s3.ax1x.com/2020/12/18/rJDtZ6.png";
+   }
+    function randArr(arr) {
+        for (var i = 0; i < arr.length; i++) {
+            var iRand = parseInt(arr.length * Math.random());
+            var temp = arr[i];
+            arr[i] = arr[iRand];
+            arr[iRand] = temp;
+        }
+        return arr;
+    }
+    randArr(Arr);
+    console.log(Arr);
+    if(ages==1){
+      this.setData({
+        aswurl:arrurl,
+        pc: Arr,
+        stys:[{'sty':1},{'sty':1},{'sty':1},{'sty':1}],
+      });
+    }
+    else{
+      this.setData({
+        aswurl:arrurl,
+        pc: Arr,
+        stys:[{'sty':1},{'sty':1},{'sty':1},{'sty':1},{'sty':1},{'sty':1}],
+      });
+    }
   },
   setClick: function (e) {
     //点击按钮，样式改变
@@ -90,71 +241,6 @@ Page({
     });
    
    },
-  goGame: function() {
-    let that = this; 
-    clearInterval(that.data.timer);
-    that.setData({
-      timer:null
-    })  
-    var app = getApp();
-        app.globalData.pGame1Count++;  
-        that.setData({
-          pageCount: app.globalData.pGame1Count,
-          countDownNum: '15',
-         });
-         this.countDown();
-  },
-  goGame2Index: function() {  
-    let that = this;
-    clearInterval(that.data.timer);
-    that.setData({
-      timer:null
-    })  
-    var count=0;
-    var answercount=0;
-    for (let i = 0; i <that.data.stys.length; i++) {
-        if (that.data.stys[i].sty == 0) {
-          count++
-          if(that.data.pc[i].sty==1){   
-            answercount++;
-          }
-        }
-      }
-    var app = getApp();
-    var pa= app.globalData.pGame1Count;
-    if(count==2&&answercount==count)
-    app.globalData.pGame1++;
-    console.log(app.globalData.pGame1)
-       if(pa<=5){
-        app.globalData.pGame1Count++;
-        that.setData({
-          pc: [ { id: 4, 'url': 'https://s3.ax1x.com/2020/12/18/rJBp9J.png','sty':0, },
-    { id: 5, 'url': 'https://s3.ax1x.com/2020/12/18/rJBFnx.png','sty':0 },{ id: 1, 'url': 'https://s3.ax1x.com/2020/12/18/rJBVAO.png','sty':1, },
-    { id: 6, 'url': 'https://s3.ax1x.com/2020/12/18/rJVP9s.png','sty':0 }, { id: 2, 'url': 'https://s3.ax1x.com/2020/12/18/rJDUIO.png','sty':1, },
-    { id: 3, 'url': 'https://s3.ax1x.com/2020/12/18/rJ0X7T.png','sty':0 }],
-          pageCount: app.globalData.pGame1Count,
-          countDownNum: '10',
-          stys:[{'sty':1},{'sty':1},{'sty':1},{'sty':1},{'sty':1},{'sty':1}],
-         });
-       }
-       else{
-        wx.redirectTo({
-          url: '../indexgame2/index'
-        })
-  }
-  this.countDown();
-  },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    this.setData({
-     });
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
   onShow: function () {
  //什么时候触发倒计时，就在什么地方调用这个函数
  this.countDown();
@@ -166,10 +252,8 @@ Page({
     that.setData({
       timer:null
     })
-    that.data.timer= setInterval(function () {//这里把setInterval赋值给变量名为timer的变量
-        //每隔一秒countDownNum就减一，实现同步
+    that.data.timer= setInterval(function () {
         countDownNum--;
-        //然后把countDownNum存进data，好让用户知道时间在倒计着
         that.setData({
           countDownNum: countDownNum
         })
@@ -183,23 +267,5 @@ Page({
            }          
         }
       }, 1000)
-  },
-/**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    var that =this;
-    //清除计时器  即清除setInter
-    clearInterval(that.data.timer)
-  },
-    /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  },
-   /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
   },
 })
