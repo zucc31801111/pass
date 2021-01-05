@@ -65,6 +65,15 @@ Page({
           }
         }
       }
+      function randArr(arr) {
+        for (var i = 0; i < arr.length; i++) {
+            var iRand = parseInt(arr.length * Math.random());
+            var temp = arr[i];
+            arr[i] = arr[iRand];
+            arr[iRand] = temp;
+        }
+        return arr;
+    }
     var app = getApp();
     var ages=app.globalData.age;
     var pa= app.globalData.pGame1Count;
@@ -83,23 +92,50 @@ Page({
     console.log(app.globalData.pGame1)
        if(pa<=5){
         app.globalData.pGame1Count++;
-        var Arr = [{ id: 4, 'url': 'https://s3.ax1x.com/2020/12/18/rJBp9J.png','sty':0, },
-        { id: 5, 'url': 'https://s3.ax1x.com/2020/12/18/rJBFnx.png','sty':0 },
-        { id: 1, 'url': 'https://s3.ax1x.com/2020/12/18/rJBVAO.png','sty':1, },
-        { id: 6, 'url': 'https://s3.ax1x.com/2020/12/18/rJVP9s.png','sty':0 }, 
-        { id: 2, 'url': 'https://s3.ax1x.com/2020/12/18/rJDUIO.png','sty':1, },
-        { id: 3, 'url': 'https://s3.ax1x.com/2020/12/18/rJ0X7T.png','sty':0 }];
-        function randArr(arr) {
-          for (var i = 0; i < arr.length; i++) {
-              var iRand = parseInt(arr.length * Math.random());
-              var temp = arr[i];
-              arr[i] = arr[iRand];
-              arr[iRand] = temp;
+
+        if(ages==1){
+          if(pa==2){
+            var Arr = [{ id: 1, 'url': 'https://s3.ax1x.com/2020/12/18/rJBp9J.png','sty':0, },
+            { id: 2, 'url': 'https://s3.ax1x.com/2020/12/18/rJBFnx.png','sty':0 },
+            { id: 3, 'url': 'https://s3.ax1x.com/2021/01/05/sF8xQx.png','sty':1, },
+            { id: 4, 'url': 'https://s3.ax1x.com/2020/12/18/rJVP9s.png','sty':0 }, 
+            { id: 5, 'url': 'https://s3.ax1x.com/2020/12/18/rJBVAO.png','sty':1, },
+            { id: 6, 'url': 'https://s3.ax1x.com/2020/12/18/rJ0X7T.png','sty':0 }];
+            var arrurl="https://s3.ax1x.com/2021/01/05/sFGJlq.png"; 
           }
-          return arr;
-      }
+          else{
+            var Arr = [{ id: 1, 'url': 'https://s3.ax1x.com/2020/12/18/rJBp9J.png','sty':0, },
+            { id: 2, 'url': 'https://s3.ax1x.com/2020/12/18/rJBFnx.png','sty':0 },
+            { id: 3, 'url': 'https://s3.ax1x.com/2020/12/18/rJBVAO.png','sty':1, },
+            { id: 4, 'url': 'https://s3.ax1x.com/2020/12/18/rJVP9s.png','sty':0 }, 
+            { id: 5, 'url': 'https://s3.ax1x.com/2020/12/18/rJDUIO.png','sty':1, },
+            { id: 6, 'url': 'https://s3.ax1x.com/2020/12/18/rJ0X7T.png','sty':0 }];
+            var arrurl="https://s3.ax1x.com/2020/12/18/rJDtZ6.png"; 
+          }
+        }
+        else{
+          if(pa==2){
+            var Arr = [{ id: 1, 'url': 'https://s3.ax1x.com/2021/01/05/sFtCwT.png','sty':0, },
+            { id: 2, 'url': 'https://s3.ax1x.com/2021/01/05/sFaa0x.png','sty':0 },
+            { id: 3, 'url': 'https://s3.ax1x.com/2021/01/05/sFtPTU.png','sty':1, },
+            { id: 4, 'url': 'https://s3.ax1x.com/2020/12/18/rJVP9s.png','sty':0 }, 
+            { id: 5, 'url': 'https://s3.ax1x.com/2021/01/05/sFURFU.png','sty':1, },
+            { id: 6, 'url': 'https://s3.ax1x.com/2020/12/18/rJBFnx.png','sty':0 }];
+            var arrurl="https://s3.ax1x.com/2021/01/05/sFJjr6.png";
+          }
+          else{
+            var Arr = [{ id: 1, 'url': 'https://s3.ax1x.com/2021/01/05/sFtPTU.png','sty':0, },
+            { id: 2, 'url': 'https://s3.ax1x.com/2021/01/05/sFaa0x.png','sty':0 },
+            { id: 3, 'url': 'https://s3.ax1x.com/2021/01/05/sFURFU.png','sty':0 },
+            { id: 4, 'url': 'https://s3.ax1x.com/2021/01/05/sFdZ4O.png','sty':1 }, 
+            { id: 5, 'url': 'https://s3.ax1x.com/2021/01/05/sFdRxJ.png','sty':1 },
+            { id: 6, 'url': 'https://s3.ax1x.com/2021/01/05/sFwDQH.png','sty':1 }];
+            var arrurl="https://s3.ax1x.com/2021/01/05/sFUvSH.png";
+          }
+        }  
       randArr(Arr);
         that.setData({
+          aswurl:arrurl,
           pc: Arr,
           pageCount: app.globalData.pGame1Count,
           countDownNum: '8',
@@ -119,11 +155,11 @@ Page({
     app.globalData.pGame1Count=1;
     var ages= app.globalData.age;
     if(ages==1){
-      var Arr = [{ id: 1, 'url': 'https://s3.ax1x.com/2020/12/18/rJBVAO.png','sty':1, },
+      var Arr = [{ id: 1, 'url': 'https://s3.ax1x.com/2020/12/18/rJBFnx.png','sty':0, },
       { id: 2, 'url': 'https://s3.ax1x.com/2020/12/18/rJVP9s.png','sty':0, },
-     { id: 3, 'url': 'https://s3.ax1x.com/2020/12/18/rJ0X7T.png','sty':0 }, 
+     { id: 3, 'url': 'https://s3.ax1x.com/2020/12/18/rJ0X7T.png','sty':1 }, 
      { id: 4, 'url': 'https://s3.ax1x.com/2020/12/18/rJBp9J.png','sty':0, },];
-     var arrurl="https://s3.ax1x.com/2020/12/18/rJDtZ6.png";
+     var arrurl="https://s3.ax1x.com/2021/01/05/sFlAKO.png";
     }
    else{
     var Arr = [{ id: 1, 'url': 'https://s3.ax1x.com/2020/12/18/rJBVAO.png','sty':1, }, 
