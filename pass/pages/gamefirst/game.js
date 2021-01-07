@@ -95,45 +95,45 @@ Page({
 
         if(ages==1){
           if(pa==2){
-            var Arr = [{ id: 1, 'url': 'https://s3.ax1x.com/2020/12/18/rJBp9J.png','sty':0, },
-            { id: 2, 'url': 'https://s3.ax1x.com/2020/12/18/rJBFnx.png','sty':0 },
-            { id: 3, 'url': 'https://s3.ax1x.com/2021/01/05/sF8xQx.png','sty':1, },
-            { id: 4, 'url': 'https://s3.ax1x.com/2020/12/18/rJVP9s.png','sty':0 }, 
-            { id: 5, 'url': 'https://s3.ax1x.com/2020/12/18/rJBVAO.png','sty':1, },
-            { id: 6, 'url': 'https://s3.ax1x.com/2020/12/18/rJ0X7T.png','sty':0 }];
-            var arrurl="https://s3.ax1x.com/2021/01/05/sFGJlq.png"; 
+            var Arr = [{ id: 1, 'url': '/images/p1t21.png','sty':0, },
+            { id: 2, 'url': '/images/p1t11.png','sty':0 },
+            { id: 3, 'url': '/images/p1t23.png','sty':1, },
+            { id: 4, 'url': '/images/p1t12.png','sty':0 }, 
+            { id: 5, 'url': '/images/p1t25.png','sty':1, },
+            { id: 6, 'url': '/images/p1t13.png','sty':0 }];
+            var arrurl="/images/p1t2a.png"; 
           }
           else{
-            var Arr = [{ id: 1, 'url': 'https://s3.ax1x.com/2020/12/18/rJBp9J.png','sty':0, },
-            { id: 2, 'url': 'https://s3.ax1x.com/2020/12/18/rJBFnx.png','sty':0 },
-            { id: 3, 'url': 'https://s3.ax1x.com/2020/12/18/rJBVAO.png','sty':1, },
-            { id: 4, 'url': 'https://s3.ax1x.com/2020/12/18/rJVP9s.png','sty':0 }, 
-            { id: 5, 'url': 'https://s3.ax1x.com/2020/12/18/rJDUIO.png','sty':1, },
-            { id: 6, 'url': 'https://s3.ax1x.com/2020/12/18/rJ0X7T.png','sty':0 }];
-            var arrurl="https://s3.ax1x.com/2020/12/18/rJDtZ6.png"; 
+            var Arr = [{ id: 1, 'url': '/images/p1t25.png','sty':1, }, 
+            { id: 2, 'url': '/images/p1t32.png','sty':1, },
+            { id: 3, 'url': '/images/p1t13.png','sty':0 }, 
+            { id: 4, 'url': '/images/p1t14.png','sty':0, },
+            { id: 5, 'url': '/images/p1t11.png','sty':0 }, 
+            { id: 6, 'url': '/images/p1t12.png','sty':0, }];
+            var arrurl="/images/p1t3a.png";
           }
         }
         else{
           if(pa==2){
-            var Arr = [{ id: 1, 'url': 'https://s3.ax1x.com/2021/01/05/sFtCwT.png','sty':0, },
-            { id: 2, 'url': 'https://s3.ax1x.com/2021/01/05/sFaa0x.png','sty':0 },
-            { id: 3, 'url': 'https://s3.ax1x.com/2021/01/05/sFtPTU.png','sty':1, },
-            { id: 4, 'url': 'https://s3.ax1x.com/2020/12/18/rJVP9s.png','sty':0 }, 
-            { id: 5, 'url': 'https://s3.ax1x.com/2021/01/05/sFURFU.png','sty':1, },
-            { id: 6, 'url': 'https://s3.ax1x.com/2020/12/18/rJBFnx.png','sty':0 }];
-            var arrurl="https://s3.ax1x.com/2021/01/05/sFJjr6.png";
+            var Arr = [{ id: 1, 'url': '/images/p1t41.png','sty':0, },
+            { id: 2, 'url': '/images/p1t42.png','sty':0 },
+            { id: 3, 'url': '/images/p1t43.png','sty':1, },
+            { id: 4, 'url': '/images/p1t12.png','sty':0 }, 
+            { id: 5, 'url': '/images/p1t45.png','sty':1, },
+            { id: 6, 'url': '/images/p1t11.png','sty':0 }];
+            var arrurl="/images/p1t4a.png";
           }
           else{
-            var Arr = [{ id: 1, 'url': 'https://s3.ax1x.com/2021/01/05/sFtPTU.png','sty':0, },
-            { id: 2, 'url': 'https://s3.ax1x.com/2021/01/05/sFaa0x.png','sty':0 },
-            { id: 3, 'url': 'https://s3.ax1x.com/2021/01/05/sFURFU.png','sty':0 },
-            { id: 4, 'url': 'https://s3.ax1x.com/2021/01/05/sFdZ4O.png','sty':1 }, 
-            { id: 5, 'url': 'https://s3.ax1x.com/2021/01/05/sFdRxJ.png','sty':1 },
-            { id: 6, 'url': 'https://s3.ax1x.com/2021/01/05/sFwDQH.png','sty':1 }];
-            var arrurl="https://s3.ax1x.com/2021/01/05/sFUvSH.png";
+            var Arr = [{ id: 1, 'url': '/images/p1t43.png','sty':0, },
+            { id: 2, 'url': '/images/p1t42.png','sty':0 },
+            { id: 3, 'url': '/images/p1t45.png','sty':0 },
+            { id: 4, 'url': '/images/p1t54.png','sty':1 }, 
+            { id: 5, 'url': '/images/p1t55.png','sty':1 },
+            { id: 6, 'url': '/images/p1t56.png','sty':1 }];
+            var arrurl="/images/p1t5a.png";
           }
         }  
-      randArr(Arr);
+    //  randArr(Arr);
         that.setData({
           aswurl:arrurl,
           pc: Arr,
@@ -155,20 +155,20 @@ Page({
     app.globalData.pGame1Count=1;
     var ages= app.globalData.age;
     if(ages==1){
-      var Arr = [{ id: 1, 'url': 'https://s3.ax1x.com/2020/12/18/rJBFnx.png','sty':0, },
-      { id: 2, 'url': 'https://s3.ax1x.com/2020/12/18/rJVP9s.png','sty':0, },
-     { id: 3, 'url': 'https://s3.ax1x.com/2020/12/18/rJ0X7T.png','sty':1 }, 
-     { id: 4, 'url': 'https://s3.ax1x.com/2020/12/18/rJBp9J.png','sty':0, },];
-     var arrurl="https://s3.ax1x.com/2021/01/05/sFlAKO.png";
+      var Arr = [{ id: 1, 'url': '/images/p1t11.png','sty':0, },
+      { id: 2, 'url': '/images/p1t12.png','sty':0, },
+     { id: 3, 'url': '/images/p1t13.png','sty':1 }, 
+     { id: 4, 'url': '/images/p1t14.png','sty':0, },];
+     var arrurl="/images/p1t1a.png";
     }
    else{
-    var Arr = [{ id: 1, 'url': 'https://s3.ax1x.com/2020/12/18/rJBVAO.png','sty':1, }, 
-    { id: 2, 'url': 'https://s3.ax1x.com/2020/12/18/rJDUIO.png','sty':1, },
-    { id: 3, 'url': 'https://s3.ax1x.com/2020/12/18/rJ0X7T.png','sty':0 }, 
-    { id: 4, 'url': 'https://s3.ax1x.com/2020/12/18/rJBp9J.png','sty':0, },
-    { id: 5, 'url': 'https://s3.ax1x.com/2020/12/18/rJBFnx.png','sty':0 }, 
-    { id: 6, 'url': 'https://s3.ax1x.com/2020/12/18/rJVP9s.png','sty':0, }];
-    var arrurl="https://s3.ax1x.com/2020/12/18/rJDtZ6.png";
+    var Arr = [{ id: 1, 'url': '/images/p1t25.png','sty':1, }, 
+            { id: 2, 'url': '/images/p1t32.png','sty':1, },
+            { id: 3, 'url': '/images/p1t13.png','sty':0 }, 
+            { id: 4, 'url': '/images/p1t14.png','sty':0, },
+            { id: 5, 'url': '/images/p1t11.png','sty':0 }, 
+            { id: 6, 'url': '/images/p1t12.png','sty':0, }];
+            var arrurl="/images/p1t3a.png";
    }
     function randArr(arr) {
         for (var i = 0; i < arr.length; i++) {
@@ -179,7 +179,7 @@ Page({
         }
         return arr;
     }
-    randArr(Arr);
+   // randArr(Arr);
     console.log(Arr);
     if(ages==1){
       this.setData({
