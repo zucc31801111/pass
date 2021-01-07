@@ -2,11 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/indexgame1/index",
-    "pages/gamefirst/game",
-    "pages/indexgame2/index",
-    "pages/game2/game",
-    "pages/game/game"
+    "pages/s1indexgame1/index",
+    "pages/s1game1/game",
+    "pages/s1indexgame2/index",
+    "pages/s1game2/game",
+    "pages/s1finish/game"
   ],
   "window": {
     "backgroundTextStyle": "light",

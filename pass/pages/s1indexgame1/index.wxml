@@ -1,0 +1,9 @@
+<!--pages/game/game.wxml-->
+<view>
+<image mode='aspectFit' class="bg-image" mode="scaleToFill" src="/images/s1game1.png"></image>
+<view class="title">游戏一:图形图片匹配 </view>
+<view class="little-title">游戏演示（新手指引） </view>
+<image mode='aspectFit' class="play-image"  src="/images/s1play1.gif"></image>
+<image mode='aspectFit' class="bt-start" src="/images/bt.png"></image>
+<button class="bt-starttext" bindtap="goGame1" >开始游戏</button>
+</view>

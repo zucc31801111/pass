@@ -1,5 +1,14 @@
 //app.js
 App({
+  globalData: {
+    userInfo: null,
+    age:2,
+    s1Game1:0,
+    s1Game2:0,
+    s1Game1Count:1,
+    s1Game2Count:1,
+    s1score:0,
+  },
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -33,12 +42,5 @@ App({
       }
     })
   },
-  globalData: {
-    userInfo: null,
-    age:2,
-    pGame1:0,
-    pGame2:0,
-    pGame1Count:1,
-    pGame2Count:1,
-  }
+
 })

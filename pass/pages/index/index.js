@@ -11,7 +11,7 @@ Page({
   },
   goGame1Index: function() {
     wx.navigateTo({
-      url: "../indexgame1/index"
+      url: "../s1indexgame1/index"
     })
   },
   //事件处理函数
