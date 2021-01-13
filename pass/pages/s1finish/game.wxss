@@ -55,14 +55,14 @@
 .bt-start1{
   width : 400rpx;
   height : 100rpx; 
-  margin-top: 800rpx;
+  margin-top: 750rpx;
   margin-left: 160rpx;
   position: absolute; 
 }
 .bt-starttext1{
   width : 400rpx;
   height : 100rpx; 
-  margin-top: 800rpx;
+  margin-top: 750rpx;
   margin-left: 160rpx;
   line-height: 100rpx;
   font-size: 50rpx;
@@ -76,14 +76,35 @@
 .bt-start2{
   width : 400rpx;
   height : 100rpx; 
-  margin-top: 1000rpx;
+  margin-top: 925rpx;
   margin-left: 160rpx;
   position: absolute; 
 }
 .bt-starttext2{
   width : 400rpx;
   height : 100rpx; 
-  margin-top: 1000rpx;
+  margin-top: 925rpx;
+  margin-left: 160rpx;
+  line-height: 100rpx;
+  font-size: 50rpx;
+  color: white;
+  position: absolute; 
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;   /*按钮透明*/  
+  border:none;				/*设置按钮边框*/
+}
+.bt-start3{
+  width : 400rpx;
+  height : 100rpx; 
+  margin-top: 1100rpx;
+  margin-left: 160rpx;
+  position: absolute; 
+}
+.bt-starttext3{
+  width : 400rpx;
+  height : 100rpx; 
+  margin-top: 1100rpx;
   margin-left: 160rpx;
   line-height: 100rpx;
   font-size: 50rpx;

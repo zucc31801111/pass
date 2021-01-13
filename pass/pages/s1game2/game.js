@@ -59,7 +59,7 @@ Page({
       { id: 6, 'url': '/images/s1t36.png','sty':0, }, 
       { id: 7, 'url': '/images/s1t27.png','sty':0, }, 
       { id: 8, 'url': '/images/s1t28.png','sty':0, }, 
-      { id: 9, 'url': '/images/s1wenhao.png','sty':0, },  
+      { id: 9, 'url': '/images/s1t11.png','sty':0, },  
       { id: 10, 'url': '/images/s1t29.png','sty':1, }, ];
      }
      else{
@@ -227,6 +227,11 @@ Page({
     }
 
   },
+  goback: function () {
+    wx.redirectTo({
+      url: '../zhuye2/logs'
+    })
+   },
   onShow: function () {
  //什么时候触发倒计时，就在什么地方调用这个函数
  this.countDown();

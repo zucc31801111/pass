@@ -8,4 +8,6 @@
 <image class="bt-start1" src="/images/bt.png"></image>
 <button class="bt-starttext1" bindtap="goGame2">重新挑战</button>
 <image class="bt-start2" src="/images/bt.png"></image>
-<button class="bt-starttext2" bindtap="goGame2">查看个人能力</button>
+<button class="bt-starttext2" bindtap="gopower">查看个人能力</button>
+<image class="bt-start3" src="/images/bt.png"></image>
+<button class="bt-starttext3" bindtap="goback">返回主页</button>

@@ -73,14 +73,14 @@
 .bt-start1{
   width : 400rpx;
   height : 100rpx; 
-  margin-top: 1200rpx;
+  margin-top: 1150rpx;
   margin-left: 160rpx;
   position: absolute; 
 }
 .bt-starttext1{
   width : 400rpx;
   height : 100rpx; 
-  margin-top: 1200rpx;
+  margin-top: 1150rpx;
   margin-left: 160rpx;
   line-height: 100rpx;
   font-size: 50rpx;
@@ -91,6 +91,28 @@
   background-color: transparent;   /*按钮透明*/  
   border:none;				/*设置按钮边框*/
 }
+.bt2-start1{
+  width : 400rpx;
+  height : 100rpx; 
+  margin-top: 1300rpx;
+  margin-left: 160rpx;
+  position: absolute; 
+}
+.bt2-starttext1{
+  width : 400rpx;
+  height : 100rpx; 
+  margin-top: 1300rpx;
+  margin-left: 160rpx;
+  line-height: 100rpx;
+  font-size: 50rpx;
+  color: white;
+  position: absolute; 
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;   /*按钮透明*/  
+  border:none;				/*设置按钮边框*/
+}
+
 .title2
 {
   color: black;
@@ -210,17 +232,38 @@
  }
 
 .bt-start2{
-  width : 400rpx;
+  width : 300rpx;
   height : 100rpx; 
   margin-top: 1260rpx;
-  margin-left: 160rpx;
+  margin-left: 60rpx;
   position: absolute; 
 }
 .bt-starttext2{
-  width : 400rpx;
+  width : 300rpx;
   height : 100rpx; 
   margin-top: 1260rpx;
-  margin-left: 160rpx;
+  margin-left: 60rpx;
+  line-height: 100rpx;
+  font-size: 50rpx;
+  color: white;
+  position: absolute; 
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;   /*按钮透明*/  
+  border:none;				/*设置按钮边框*/
+}
+.bt2-start2{
+  width : 300rpx;
+  height : 100rpx; 
+  margin-top: 1260rpx;
+  margin-left: 420rpx;
+  position: absolute; 
+}
+.bt2-starttext2{
+  width : 300rpx;
+  height : 100rpx; 
+  margin-top: 1260rpx;
+  margin-left: 420rpx;
   line-height: 100rpx;
   font-size: 50rpx;
   color: white;

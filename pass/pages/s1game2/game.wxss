@@ -249,17 +249,38 @@
   background-repeat:no-repeat;
  }
 .bt-start{
-  width : 400rpx;
+  width : 300rpx;
   height : 100rpx; 
   margin-top: 1320rpx;
-  margin-left: 160rpx;
+  margin-left: 60rpx;
   position: absolute; 
 }
 .bt-starttext{
-  width : 400rpx;
+  width : 300rpx;
   height : 100rpx; 
   margin-top: 1320rpx;
-  margin-left: 160rpx;
+  margin-left: 60rpx;
+  line-height: 100rpx;
+  font-size: 50rpx;
+  color: white;
+  position: absolute; 
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;   /*按钮透明*/  
+  border:none;				/*设置按钮边框*/
+}
+.bt2-start{
+  width : 300rpx;
+  height : 100rpx; 
+  margin-top: 1320rpx;
+  margin-left: 420rpx;
+  position: absolute; 
+}
+.bt2-starttext{
+  width : 300rpx;
+  height : 100rpx; 
+  margin-top: 1320rpx;
+  margin-left: 420rpx;
   line-height: 100rpx;
   font-size: 50rpx;
   color: white;

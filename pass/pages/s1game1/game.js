@@ -196,6 +196,11 @@ Page({
       });
     }
   },
+  goback: function () {
+    wx.redirectTo({
+      url: '../zhuye2/logs'
+    })
+   },
   setClick: function (e) {
     //点击按钮，样式改变
     var that = this;

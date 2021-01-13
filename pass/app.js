@@ -2,7 +2,7 @@
 App({
   globalData: {
     userInfo: null,
-    age:2,
+    age:1,
     s1Game1:0,
     s1Game2:0,
     s1Game1Count:1,

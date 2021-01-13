@@ -10,13 +10,13 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   goGame1Index: function() {
-    wx.navigateTo({
+    wx.navigateTo({ 
       url: "../s1indexgame1/index"
     })
   },
   //事件处理函数
   bindViewTap: function() {
-    wx.navigateTo({
+    wx.redirectTo({
       url: "../logs/logs"
     })
   },

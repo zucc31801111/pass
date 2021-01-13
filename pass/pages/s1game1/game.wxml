@@ -11,6 +11,8 @@
   <image class="play-content" src="{{aswurl}}"></image>
   <image class="bt-start1" src="/images/bt.png"></image>
   <button class="bt-starttext1" bindtap="goGame">好的，记住了</button>
+  <image class="bt2-start1" src="/images/bt.png"></image>
+  <button class="bt2-starttext1" bindtap="goback">返回主页</button>
 </view>
 
 <view wx:if="{{pageCount==2||pageCount==4||pageCount==6}}">
@@ -80,5 +82,9 @@
 
   <image class="bt-start2" src="/images/bt.png"></image>
   <button class="bt-starttext2" bindtap="goGame2Index">下一关</button>
+
+  <image class="bt2-start2" src="/images/bt.png"></image>
+  <button class="bt2-starttext2" bindtap="goback">返回主页</button>
+
 </view>
 

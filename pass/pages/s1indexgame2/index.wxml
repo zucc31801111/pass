@@ -3,7 +3,9 @@
 <image class="bg-image" mode="scaleToFill" src="/images/s1game2.png"></image>
 <view class="title">游戏二:渐进图形 </view>
 <view class="little-title">游戏演示（新手指引） </view>
-<image class="play-image"  src="/images/s1play2.gif"></image>
+<image class="play-image"  src="https://s3.ax1x.com/2020/12/31/rjiHdP.gif"></image>
 <image class="bt-start" src="/images/bt.png"></image>
 <button class="bt-starttext" bindtap="goGame2">开始游戏</button>
+<image mode='aspectFit' class="bt2-start" src="/images/bt.png"></image>
+<button class="bt2-starttext" bindtap="goback" >返回主页</button>
 </view>

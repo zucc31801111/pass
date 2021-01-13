@@ -121,4 +121,6 @@
 
   <image class="bt-start" src="/images/bt.png"></image>
   <button class="bt-starttext" bindtap="goGame2">下一关</button>
+  <image class="bt2-start" src="/images/bt.png"></image>
+  <button class="bt2-starttext" bindtap="goback">返回主页</button>
 </view>
